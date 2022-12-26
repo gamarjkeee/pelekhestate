@@ -2081,6 +2081,16 @@ svg path {
             animation: opacity 1s ease forwards 0.8s;
   }
 
+  .listings__link {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  ._watcher-view .listings__link {
+    -webkit-animation: opacity 1s ease forwards 0.8s;
+            animation: opacity 1s ease forwards 0.8s;
+  }
+
   .list__label {
     opacity: 0;
     visibility: hidden;
@@ -2149,6 +2159,16 @@ svg path {
   }
 
   ._watcher-view .newsroom__items {
+    -webkit-animation: opacity 1s ease forwards 0.8s;
+            animation: opacity 1s ease forwards 0.8s;
+  }
+
+  .newsroom__link {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  ._watcher-view .newsroom__link {
     -webkit-animation: opacity 1s ease forwards 0.8s;
             animation: opacity 1s ease forwards 0.8s;
   }
