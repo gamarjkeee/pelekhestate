@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221225153922">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221226205906">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<a href="#" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Logo Image" /></picture></a>
+				<a href="home.html" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Logo Image" /></picture></a>
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
@@ -24,13 +24,13 @@
 								<a href="#" data-goto-top="70" data-goto=".page__goal" class="menu__link"><span>O nás</span></a>
 							</li>
 							<li class="menu__item">
-								<a href="#" data-goto-top="70" data-goto=".page__requirements" class="menu__link"><span>Príležitosti investovania</span></a>
+								<a href="#" data-goto-top="70" data-goto=".page__listings" class="menu__link"><span>Príležitosti investovania</span></a>
 							</li>
 							<li class="menu__item">
 								<a href="#" data-goto-top="70" data-goto=".page__list" class="menu__link"><span>Výhody investovania</span></a>
 							</li>
 							<li class="menu__item">
-								<a href="#" data-goto-top="70" data-goto=".page__listings" class="menu__link"><span>Referencie</span></a>
+								<a href="#" data-goto-top="70" data-goto=".page__testomorials" class="menu__link"><span>Referencie</span></a>
 							</li>
 							<li class="menu__item">
 								<a href="#" data-goto-top="70" data-goto=".page__form" class="menu__link"><span>Kontakt</span></a>
@@ -43,7 +43,7 @@
 		</header>
 
 		<main class="page">
-			<section class="page__main main">
+			<section data-watch-threshold="0.5" data-watch-once data-watch class="page__main main">
 				<div class="main__container">
 					<di class="main__content">
 						<a href="home.html" class="main__logo">
@@ -57,7 +57,7 @@
 					</di>
 				</div>
 			</section>
-			<section class="page__goal goal">
+			<section data-watch-threshold="0.5" data-watch-once data-watch class="page__goal goal">
 				<div class="goal__container">
 					<div class="goal__content">
 						<div class="goal__label label">Náš cieľ</div>
@@ -95,7 +95,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__requirements requirements">
+			<section data-watch-threshold="0.3" data-watch-once data-watch class="page__requirements requirements">
 				<div class="requirements__container">
 					<div class="requirements__header">
 						<div class="requirements__label label">Naše požiadavky</div>
@@ -155,7 +155,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__listings listings">
+			<section data-watch-threshold="0.25" data-watch-once data-watch class="page__listings listings">
 				<div class="listings__container">
 					<div class="listings__header">
 						<div class="listings__label label">
@@ -295,7 +295,7 @@
 					</a>
 				</div>
 			</section>
-			<section class="page__list list">
+			<section data-watch-threshold="0.4" data-watch-once data-watch class="page__list list">
 				<div class="list__container">
 					<div class="list__label label">Podívejte se do budoucnosti</div>
 					<h2 class="list__title title">Výhody investovania v Ukrajine:</h2>
@@ -313,7 +313,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__newsroom newsroom">
+			<section data-watch-threshold="0.4" data-watch-once data-watch class="page__newsroom newsroom">
 				<div class="newsroom__container">
 					<div class="newsroom__label label">Noviny</div>
 					<h2 class="newsroom__title title">Články o investovaní v UA:</h2>
@@ -347,7 +347,7 @@
 					</a>
 				</div>
 			</section>
-			<section class="page__testomorials testomorials">
+			<section data-watch-threshold="0.4" data-watch-once data-watch class="page__testomorials testomorials">
 				<div class="testomorials__container">
 					<div class="testomorials__label label">Referencie</div>
 					<h2 class="testomorials__title title">Čo hovoria naši zákazníci</h2>
@@ -449,7 +449,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__form form">
+			<section data-watch-threshold="0.4" data-watch-once data-watch class="page__form form">
 				<div class="form__container">
 					<div class="form__content">
 						<div class="form__label">Dost’ info?</div>
@@ -480,10 +480,10 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer data-watch-threshold="0.4" data-watch-once data-watch class="footer">
 			<div class="footer__container">
 				<div class="footer__left">
-					<a href="#" class="footer__logo">
+					<a href="home.html" class="footer__logo">
 						<picture><source srcset="img/logo-white.webp" type="image/webp"><img src="img/logo-white.png" alt="Logo Image" /></picture>
 					</a>
 					<div class="footer__social social-footer">
@@ -512,7 +512,157 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20221225153922"></script>
+	<script src="js/app.min.js?_v=20221226205906"></script> <!-- Стилі для body -->
+	<style>
+		.lock body {
+			overflow: hidden;
+			touch-action: none;
+			overscroll-behavior: none;
+		}
+
+		.loading body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.loaded body {
+			transition: opacity 0.5s ease 0s;
+			opacity: 1;
+			visibility: visible;
+		}
+	</style>
+	<div id="fls-preloader">
+		<!-- Документація: https://template.fls.guru/template-docs/modul-preloader.html -->
+		<!-- Стилі для прелоадера -->
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+				border: 0px;
+			}
+
+			*,
+			*:before,
+			*:after {
+				box-sizing: border-box;
+			}
+
+			/* Головний блок */
+			.fls-preloader {
+				pointer-events: none;
+				z-index: -1;
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			/* Блок з елементами */
+			.fls-preloader__body {
+				padding: 0.93rem;
+				max-width: 31.25rem;
+				display: flex;
+				flex-direction: column;
+			}
+
+			/* Блок з лічильником */
+			.fls-preloader__counter {
+				font-size: 2rem;
+				font-family: "Poppins";
+				color: #45525b;
+			}
+
+			/* Прогресбар */
+			.fls-preloader__line {}
+
+			/* Лінія прогресбару */
+			.fls-preloader__line span {
+				display: inline-block;
+				transition: width 0.2s ease;
+				height: 0.8rem;
+				background-color: #ff8a63;
+			}
+		</style>
+		<!-- Скріпт прелоадера -->
+		<script>
+			function preloader() {
+				const preloaderImages = document.querySelector("[data-preloader]") ?
+					document.querySelectorAll("[data-preloader] img") :
+					document.querySelectorAll("img");
+				const preloaderContainer = document.querySelector("#fls-preloader");
+				if (preloaderImages.length) {
+					const preloaderTemplate = `
+					<div class="fls-preloader">
+						<div class="fls-preloader__body">
+							<div class="fls-preloader__counter">0%</div>
+							<div class="fls-preloader__line"><span></span></div>
+						</div>
+					</div>`;
+					document
+						.querySelector("html")
+						.insertAdjacentHTML("beforeend", preloaderTemplate);
+
+					const preloader = document.querySelector(".fls-preloader"),
+						showPecentLoad = document.querySelector(".fls-preloader__counter"),
+						showLineLoad = document.querySelector(".fls-preloader__line span"),
+						htmlDocument = document.documentElement;
+
+					let imagesLoadedCount = (counter = progress = 0);
+
+					htmlDocument.classList.add("loading");
+					htmlDocument.classList.add("lock");
+
+					preloaderImages.forEach((preloaderImage) => {
+						const imgClone = document.createElement("img");
+						if (imgClone) {
+							imgClone.onload = imageLoaded;
+							imgClone.onerror = imageLoaded;
+							preloaderImage.dataset.src ?
+								(imgClone.src = preloaderImage.dataset.src) :
+								(imgClone.src = preloaderImage.src);
+						}
+					});
+
+					function setValueProgress(progress) {
+						showPecentLoad ? (showPecentLoad.innerText = `${progress}%`) : null;
+						showLineLoad ? (showLineLoad.style.width = `${progress}%`) : null;
+					}
+					showPecentLoad ? setValueProgress(progress) : null;
+
+					function imageLoaded() {
+						imagesLoadedCount++;
+						progress = Math.round(
+							(100 / preloaderImages.length) * imagesLoadedCount
+						);
+						const intervalId = setInterval(() => {
+							counter >= progress ?
+								clearInterval(intervalId) :
+								setValueProgress(++counter);
+							counter >= 100 ? addLoadedClass() : null;
+						}, 10);
+					}
+
+					function addLoadedClass() {
+						htmlDocument.classList.add("loaded");
+						htmlDocument.classList.remove("lock");
+						htmlDocument.classList.remove("loading");
+						setInterval(() => {
+							preloader.remove();
+							preloaderContainer.remove();
+						}, 500);
+					}
+				} else {
+					preloaderContainer.remove();
+				}
+			}
+			preloader();
+		</script>
+	</div>
+
 </body>
 
 </html>
